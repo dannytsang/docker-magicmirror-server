@@ -4,6 +4,7 @@ services:
   magicmirror:
     image: bastilimbach/docker-magicmirror
     container_name: magicmirror
+    network_mode: "bridge"
     restart: always
     volumes:
       - /etc/localtime:/etc/localtime:ro
